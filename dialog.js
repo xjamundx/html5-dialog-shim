@@ -2,8 +2,8 @@ function Dialog(id) {
   var self = this;
   this.el = id ? document.getElementById(id) : document.createElement("dialog");
   this.returnValue = "";
-  window.addEventListener("keypress", function(e) {
-    if (e.which === 0) {
+  window.addEventListener("keydown", function(e) {
+    if (e.keyCode === 27) {
       self.close();
     }
   }, false);
