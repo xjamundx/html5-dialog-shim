@@ -1,6 +1,6 @@
 # HTML5 Dialog Shim
 
-I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it was awesome. It was important to make it.
+I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it would be fun to implement a shim for it.
 
 See the [demo](http://xjamundx.github.com/html5-dialog-shim/).
 
