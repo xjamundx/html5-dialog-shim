@@ -1,6 +1,8 @@
 # HTML5 Dialog Shim
 
-I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it was awesome. It was important to make it. Here's a [demo](http://xjamundx.github.com/html5-dialog-shim/).
+I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it was awesome. It was important to make it.
+
+See the [demo](http://xjamundx.github.com/html5-dialog-shim/).
 
 ## Getting Started
 
