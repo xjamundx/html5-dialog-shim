@@ -3,7 +3,7 @@ dialog {
   border: 5px solid black;
   border-radius: 12px;
   display: none;
-  height: 500px;
+  height: 250px;
   left: 50%;
   margin-left: -250px;
   padding: 20px;
