@@ -23,6 +23,7 @@ var dialog2 = new Dialog("dialog2");
 
 ## Todo
 
+- Add Tests
 - Make it pretty.
 - Figure out what to do with `returnValue`.
 - Figure out how to deal with `showModal`.
