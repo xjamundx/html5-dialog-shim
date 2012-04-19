@@ -1,15 +1,15 @@
 dialog {
-  display: none;
-  width: 500px;
-  height: 500px;
   background: gray;
-  padding: 20px;
   border: 5px solid black;
   border-radius: 12px;
-  position: fixed;
-  top: 20%;
+  display: none;
+  height: 500px;
   left: 50%;
   margin-left: -250px;
+  padding: 20px;
+  position: fixed;
+  top: 20%;
+  width: 500px;
 }
 
 dialog[open] {
