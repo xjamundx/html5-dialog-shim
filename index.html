@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="dialog.js"></script>
+    <style>
+      div {
+        margin: 20px;
+      }
+    
+      div.code {
+        background: #ccc;
+        margin: 0 20px;
+      }
+      
+      code {
+        background: #ccc;
+        font-family: Serif;
+        white-space: pre;
+        margin: 20px 0;
+      }
+      
+      script[contenteditable] {
+        margin: 20px;
+        display: block;
+        white-space: pre;
+        border: 1px dashed #ccc;
+      }
+    </style>
+    <link rel="stylesheet" href="dialog.css">
+  </head>
+  <body onload="init()">
+    <h1>HTML5 Dialog Shim</h1>
+    <p>Here is the <a href="http://dev.w3.org/html5/spec/commands.html#the-dialog-element">HTML5 Dialog Spec</a>. It's complicated and the shim needs a fair bit more work. Also, the CSS is really awesome at the moment.</p>
+    <h2>An Example</h2>
+    <p>You can test this by pressing the button and pressing <code>esc</code> to close dialog</p>
+    <div>
+      <button id="dialog1Btn">Dialog 1</button>
+      <button id="dialog2Btn">Dialog 2</button>
+    </div>
+    <h2>The Code</h2>
+    <div class="code">
+    <code>
+      // create a new dialog box
+      var dialog1 = new Dialog();
+      document.body.appendChild(dialog1.el);
+      dialog1.el.setAttribute("id", "dialog1")
+      dialog1.el.innerHTML = "&lt;h1&gt;Dialog 1&lt;/h1&gt;";
+
+      // create a dialog box from existing html
+      var dialog2 = new Dialog("dialog2");
+    </code>
+    </div>
+    <dialog id="dialog2">
+      <h1>Dialog 2</h1>
+    </dialog>
+    <script >
+    function init() {
+
+      // create a new dialog box
+      var dialog1 = new Dialog();
+      document.body.appendChild(dialog1.el);
+      dialog1.el.setAttribute("id", "dialog1")
+      dialog1.el.innerHTML = "<h1>Dialog 1</h1>";
+
+      // create a dialog box from existing html
+      var dialog2 = new Dialog("dialog2");
+     
+      // click opens dialog1
+      document.getElementById("dialog1Btn").addEventListener("click", function() {
+        dialog1.show();
+      }, false);
+      
+      // click opens dialog2
+      document.getElementById("dialog2Btn").addEventListener("click", function() {
+        dialog2.show();
+      }, false);
+      
+    }
+    </script>
+    <script>
+
+    </script>
+  </body>
+</html>
