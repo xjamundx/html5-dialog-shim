@@ -2,6 +2,10 @@
 
 I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it was awesome. It was important to make it. Here's a [demo](http://www.yahoo.com).
 
+## Getting Started
+
+Include the `dialog.css` as well as the `dialog.js` file and you can start playing with HTML5 dialogs.
+
 ## Example
 
 ```javascript
@@ -27,7 +31,7 @@ var dialog2 = new Dialog("dialog2");
 - Implement the `cancel` event.
 - Implement proper error throwing as per spec.
 
-## Requirements / Browser support
+## Browser Requirements
 
 - `window.addEventListener` support as in IE9, Chrome 1+, Opera 7+, Safari 1.0+, Firefox 1.0+
 - Basic HTML5 support as found in the same browsers.
