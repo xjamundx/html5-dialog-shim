@@ -1,6 +1,8 @@
 # HTML5 Dialog Shim
 
-I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it was awesome. It was important to make it. Here's a [demo](http://www.yahoo.com).
+I saw the [HTML5 Dialog Spec](http://dev.w3.org/html5/spec/commands.html#the-dialog-element) the other day and thought it would be fun to implement a shim for it.
+
+See the [demo](http://xjamundx.github.com/html5-dialog-shim/).
 
 ## Getting Started
 
@@ -21,6 +23,7 @@ var dialog2 = new Dialog("dialog2");
 
 ## Todo
 
+- Add Tests
 - Make it pretty.
 - Figure out what to do with `returnValue`.
 - Figure out how to deal with `showModal`.
